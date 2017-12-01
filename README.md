@@ -59,7 +59,7 @@ To modify the driver you can use a hex editor to chage the value on 0x2c and 0x2
 I created device drivers for 10mByte rl compatible (dl:) and 32mByte mscp compatible (du:) disk images.
 The name of the 10 mByte rl: compatible device drivers are dw.sys and dwx.sys, and for the 32 mByte sized 
 mscp compatible disk images dv.sys and dvx.sys. The dv.sys, dvx.sys, dw.sys and dwx.sys files can be downloaded on 
-a TU58 disk image file: <a target="new" href="TU58-dv-and-dw-drivers.dsk">TU58-dv-and-dw-drivers.dsk
+a TU58 disk image file: TU58-dv-and-dw-drivers.dsk
 To use the drivers mount the TU58-dv-and-dw-drivers.dsk file using the TU58 emulator, cop the drivers to 
 the system disk, e.g., use the "copy /sys dd0:d*.sys dl:" command, and reboot the system.
 If you boot rt11xm you before using the driver you have to load the driver with the load command, e.g., 
