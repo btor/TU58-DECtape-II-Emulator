@@ -1,0 +1,113 @@
+RT-11FB  V05.03  
+
+.TYPE V5USER.TXT
+
+                              RT-11 V5.3
+
+       Installation of RT-11 Version 5.3 is complete and you are now
+    executing from the working volume    (provided you have used the
+    automatic installation procedure). DIGITAL recommends you verify
+    the correct  operation  of  your  system's  software  using  the
+    verification procedure.  To do this, enter the command:
+
+                             IND VERIFY
+
+        Note that VERIFY should be performed  only after the distri-
+    bution media have been backed up.  This was accomplished as part
+    of automatic installation on  all  RL02,  RX02,  TK50, and  RX50
+    based systems,   including the  MicroPDP-11 and the Professional
+    300.  If you have not completed automatic installation, you must
+    perform a manual backup before using VERIFY.  Note also,  VERIFY
+    is NOT supported on RX01 diskettes,    DECtape I or II,   or the
+    Professional 325.
+
+    DIGITAL also  recommends  you  read  the  file V5NOTE.TXT, which
+    contains information  formalized too late to be included  in the
+    Release Notes.  V5NOTE.TXT can be TYPED or PRINTED.
+
+
+.boot /for dd0:
+
+NOT ENOUGH MEMORY TO BOOT XXDP-XM
+
+BOOTING UP XXDP-SM SMALL MONITOR
+
+
+XXDP-SM SMALL MONITOR - XXDP V2.6
+REVISION: E0
+BOOTED FROM DD0
+28KW OF MEMORY
+NON-UNIBUS SYSTEM
+
+RESTART ADDRESS: 152010
+TYPE "H" FOR HELP 
+
+.R ZTUUF0
+ZTUUF0.BIN
+
+DRSSM-G2
+CZTUU-F-0
+TU58 PERF EXER
+UNIT IS TU58 CONTROLLER
+RSTRT ADR 145702
+DR>START
+
+CHANGE HW (L)  ? Y
+
+# UNITS (D)  ? 1
+
+UNIT 0
+TU58 CSR (O)  176500 ? 
+VECTOR ADDR. (O)  300 ? 
+PDT INTERFACE (L) N ? 
+TEST DRIVE 0 (L) Y ? N
+TEST DRIVE 1 (L) Y ? 
+
+CHANGE SW (L)  ? Y
+
+NUMBER OF BLOCKS:TEST 5-8 (8 TO 512) (D)  8 ? 
+ADD DR # TO DATA PATTERN:TEST 5-8 (L) Y ? 
+STATISTICS PRINTED AT EOP (L) Y ? 
+COMPARE DATA ON READ (L) Y ? 
+PRINT PACKET ON ERROR (L) Y ? 
+# ERRORS = DVC FATAL IF 'EVL'SET (D)  1 ? 
+PRINT UNIT PROTOCOL SUMMARY (TEST 9) (L) N ? Y
+TEST ONLY DRIVE 0 IN TEST 3 (L) N ? 
+
+NXT TST MAY ZERO LD UNIT. DOIT ANYWAY?Y
+
+        UNIT NO               PROTOCOL
+
+           0                  RSP/MRSP
+           1                  ---
+           2                  ---
+           3                  ---
+           4                  ---
+           5                  ---
+           6                  ---
+           7                  ---
+      DR BLKS WR  BLKS RD  BDPAK  DCHK/RD DCHK/WR  DCHK/RD DCHK/WR
+                                   RECOV   RECOV   UNRECOV UNRECOV
+UNIT 0
+       0     0.       0.      0.      0.     0.       0.      0.
+       1   272.     272.      0.      0.     0.       0.      0.
+
+CZTUU EOP    1
+    0 TOTAL ERRS
+
+        UNIT NO               PROTOCOL
+
+           0                  RSP/MRSP
+           1                  ---
+           2                  ---
+           3                  ---
+           4                  ---
+           5                  ---
+           6                  ---
+           7                  ---
+      DR BLKS WR  BLKS RD  BDPAK  DCHK/RD DCHK/WR  DCHK/RD DCHK/WR
+                                   RECOV   RECOV   UNRECOV UNRECOV
+UNIT 0
+       0     0.       0.      0.      0.     0.       0.      0.
+       1   544.     544.      0.      0.     0.       0.      0.
+
